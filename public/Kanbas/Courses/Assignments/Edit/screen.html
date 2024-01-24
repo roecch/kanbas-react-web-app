@@ -66,29 +66,45 @@
                     <br>
                     <input type="text" name="wd-assignment-name" value="Assignment 1">
                     <br>
-                    <textarea name="wd-description" text="This is the assignment description."></textarea> 
-                    <br>
-                    Points <input value="100">
-                    <br>
-                    Assignment Group
-                    <select>
-                        <option>ASSIGNMENTS</option>
-                        <option>QUIZZES</option>
-                        <option>EXAMS</option>
-                        <option>PROJECTS</option>
-                    </select>
-                    <br>
-                    Display Grade 
-                    <select>
-                        <option>Percentage</option>
-                        <option>Score</option>
-                    </select>
+                    <textarea name="wd-description">This is the assignment description.</textarea> 
                     <br>
                     <form action="/Kanbas/Courses/Assignments/screen.html">
                     <table>
                         <thread>
+                    <tr>
+                        <td>
+                            Points 
+                        </td>
+                        <td>
+                            <input value="100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Assignment Group
+                        </td>
+                        <td>
+                            <select>
+                                <option>ASSIGNMENTS</option>
+                                <option>QUIZZES</option>
+                                <option>EXAMS</option>
+                                <option>PROJECTS</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Display Grade 
+                        </td>
+                        <td>
+                            <select>
+                                <option>Percentage</option>
+                                <option>Score</option>
+                            </select>
+                        </td>
+                    </tr>
                             <tr>
-                                <td>
+                                <td style="vertical-align:top">
                                     Submission Type
                                 </td>
                                 <td>
@@ -103,42 +119,57 @@
                                     name="check-textentry" id="chkbox-textentry" checked/>
                                     <label for="chkbox-textentry">Text Entry</label>    
                                     <br/>
-                                    <input type="checkbox">
-                                    <label>Website URL</label>    
+                                    <input type="checkbox" value="URL"
+                                    name="check-URL" id="chkbox-URL" checked/>
+                                    <label for="chkbox-URL">Website URL</label>    
                                     <br/>
-                                    <input type="checkbox">
-                                    <label>Media Recordings</label>    
+                                    <input type="checkbox" value="Media"
+                                    name="check-Media" id="chkbox-Media" />
+                                    <label for="chkbox-Media">Media Recordings</label>    
                                     <br/>
-                                    <input type="checkbox">
-                                    <label>Student Annotation</label>    
+                                    <input type="checkbox" value="Student"
+                                    name="check-Student" id="chkbox-Student" />
+                                    <label for="chkbox-Student">Student Annotation</label>    
                                     <br/>
-                                    <input type="checkbox">
-                                    <label>File Uploads</label>    
+                                    <input type="checkbox" value="Uploads"
+                                    name="check-Uploads" id="chkbox-Uploads" checked/>
+                                    <label for="chkbox-Uploads">File Uploads</label>    
                                     <br/>
-                                    <input type="checkbox">
-                                    <label>Restrict Upload File Types</label>
+                                    <input type="checkbox" value="Restrict"
+                                    name="check-Restrict" id="chkbox-Restrict" />
+                                    <label for="chkbox-Restrict">Restrict Upload File Types</label>    
+                                    <br/>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td style="vertical-align:top">
                                     Assign
                                 </td>
                                 <td>
-                                    Assign to
-                                    <br>
-                                    <input value="Everyone">
-                                    <br>
-                                    Due
-                                    <br>
-                                    <input type="datetime" value="2024-22-1">
-                                    <br>
-                                    Available from
-                                    <br>
-                                    <input type="datetime" value="2024-22-1">
-                                    <br>
-                                    Until
-                                    <br>
-                                    <input type="datetime" value="2024-22-1">
+                                    Due:<br />
+                                <input
+                                  type="date"
+                                  name="wd-assignment-due-date"
+                                  min="2023-01-05"
+                                  max="2023-01-23"
+                                  value="2023-01-15"
+                                /><br />
+                                Available from:<br />
+                                <input
+                                  type="date"
+                                  name="wd-assignment-available-date"
+                                  min="2023-01-05"
+                                  max="2023-01-23"
+                                  value="2023-01-15"
+                                /><br />
+                                Available unitl:<br />
+                                <input
+                                  type="date"
+                                  name="wd-assignment-available-until-date"
+                                  min="2023-01-05"
+                                  max="2023-01-23"
+                                  value="2023-01-15"
+                                /><br />
                                 </td>
                             </tr>
                         </thread>
