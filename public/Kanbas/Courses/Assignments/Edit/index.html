@@ -1,13 +1,17 @@
 <html>
     <head></head>
     <body>
-        Assignment Name
+        <select>
+            <option>SpeedGrader</option>
+        </select>
+        <hr>
+        <label>Assignment Name</label>
         <br>
-        <input placeholder="name">
+        <input type="text" name="wd-assignment-name" value="Assignment 1">
         <br>
-        <textarea placeholder="Description"></textarea> 
+        <textarea name="wd-description" text="This is the assignment description."></textarea> 
         <br>
-        Points <input placeholder="100">
+        Points <input value="100">
         <br>
         Assignment Group
         <select>
@@ -23,6 +27,7 @@
             <option>Score</option>
         </select>
         <br>
+        <form action="/Kanbas/Courses/Assignments/screen.html">
         <table>
             <thread>
                 <tr>
@@ -64,15 +69,25 @@
                     <td>
                         Assign to
                         <br>
-
+                        <input value="Everyone">
                         <br>
                         Due
                         <br>
-                        <input type="datetime">
+                        <input type="datetime" value="2024-22-1">
                         <br>
+                        Available from
+                        <br>
+                        <input type="datetime" value="2024-22-1">
+                        <br>
+                        Until
+                        <br>
+                        <input type="datetime" value="2024-22-1">
                     </td>
                 </tr>
             </thread>
         </table>
+        <button>Cancel</button>
+        <button>Save</button>
+      </form>
     </body>
 </html>
