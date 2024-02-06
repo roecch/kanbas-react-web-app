@@ -1,54 +1,128 @@
 <html>
-    <head></head>
+    <head>
+      <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+      <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="/Kanbas/styles.css" />
+      <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    </head>
     <body>
-        <table>
-            <tbody>
-              <tr>
-                <td style="vertical-align:top">
-                    <ul>
-                      <li><a href="/Kanbas/Account/Navigation/index.html">Account</a></li>
-                      <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                      <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                      <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-                      <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                      <li><a href="/Kanbas/History/index.html">History</a></li>
-                      <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-                      <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-                      <li><a href="/Kanbas/Help/index.html">Help</a></li>
-                    </ul>
-                </td>
-                <td style="vertical-align:top">     
-                    <ul>
-                        <li>
-                            <a href="">Notification</a>
-                        </li>
-                        <li>
-                            <a href="">Profile</a>
-                        </li>
-                        <li>
-                            <a href="">Files</a>
-                        </li>
-                        <li>
-                            <a href="">Settings</a>
-                        </li>
-                        <li>
-                            <a href="">ePortfolios</a>
-                        </li>
-                        <li>
-                            <a href="">Shared Content</a>
-                        </li>
-                        <li>
-                            <a href="">The Hub</a>
-                        </li>
-                        <li>
-                            <a href="">Qwickly Course Tools</a>
-                        </li>
-                        <li>
-                            <a href="">Global Announcements</a>
-                        </li>
-                    </ul>
-                </td>
-                <td style="vertical-align:top">
+        <div class="d-flex">
+            <div class="d-none d-md-block">
+              <ul class="wd-kanbas-navigation">
+                  <li><a href="http://northeastern.edu"><img src="/Kanbas/Icons/Northeastern-University-logo.png" class="icon-size"></a></li>
+                  <li class="wd-active">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <div class="sidebar-option">
+                            <i class="fa fa-user" id="acc-dash"></i>
+                                <br>Account
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <div class="sidebar-option">
+                            <i class="fa fa-tachometer"></i>
+                              <br>Dashboard
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <div class="sidebar-option">
+                              <i class="fa fa-book icon-size non-acc-color"> </i>
+                              <br>Courses
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="sidebar-option">
+                              <i class="fa fa-solid fa-calendar icon-size non-acc-color"> </i>
+                              <br>Calendar
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="sidebar-option">
+                              <i class="fa fa-solid fa-inbox icon-size non-acc-color"> </i>
+                              <br>Inbox
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="sidebar-option">
+                              <i class="fa fa-clock-o icon-size non-acc-color"> </i>
+                              <br>History
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="sidebar-option">
+                              <i class="fa fa-solid fa-arrow-right icon-size non-acc-color"> </i>
+                              <br>Commons
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="sidebar-option">
+                              <i class="fa fa-regular fa-play-circle-o icon-size non-acc-color"> </i>
+                              <br>Studio
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="sidebar-option">
+                              <i class="fa fa-question icon-size non-acc-color"> </i>
+                              <br>Help
+                        </div>
+                    </a>
+                </li>
+                </ul>
+                
+        <div class="wd-kanbas-navigation-spacer">
+        </div>
+              </div>
+              <div class="d-none d-md-block">
+                <ul class="wd-navigation">
+                  <!-- Copy Course Navigation Here -->
+                    <li>
+                        <a href="">Notification</a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="/Kanbas/Account/Profile/screen.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="">Files</a>
+                    </li>
+                    <li>
+                        <a href="">Settings</a>
+                    </li>
+                    <li>
+                        <a href="">ePortfolios</a>
+                    </li>
+                    <li>
+                        <a href="">Shared Content</a>
+                    </li>
+                    <li>
+                        <a href="">The Hub</a>
+                    </li>
+                    <li>
+                        <a href="">Qwickly Course Tools</a>
+                    </li>
+                    <li>
+                        <a href="">Global Announcements</a>
+                    </li>
+                </ul>
+              </div>
+              <div>
                     
         Monroe Chung's Profile
         <hr>
@@ -73,9 +147,7 @@
             </tbody>
         </table>
 
-                </td>
-              </tr>
-            </tbody>
-          </table>        
+              </div>
+              </div>       
     </body>
 </html>
