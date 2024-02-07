@@ -8,13 +8,121 @@
     <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Home/Status/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="d-block d-md-none">
+      <nav
+        class="navbar bg-dark border-bottom border-body"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#kanbasNav"
+            aria-controls="kanbasNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#courseNav"
+            aria-controls="courseNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fa fa-arrow-down"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="kanbasNav">
+            <div class="card card-body">
+              <ul class="wd-nav-navigation">
+                <li>
+                  <a href="/Kanbas/Account/Profile/screen.html">
+                    <i class="fa fa-user"></i> Account
+                  </a>
+                </li>
+                <li>
+                  <a href="/Kanbas/Dashboard/screen.html">
+                    <i class="fa fa-tachometer"></i> Dashboard
+                  </a>
+                </li>
+                <li>
+                  <a href="/Kanbas/Courses/Home/screen.html">
+                    <i class="fa fa-book"></i> Courses
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa fa-calendar"></i> Calendar </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa fa-inbox"></i> Inbox </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa fa-clock-o"></i> History </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-arrow-right"></i> Commons
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa fa-play-circle-o"></i> Studio </a>
+                </li>
+                
+                <li>
+                  <a href="#"> <i class="fa fa-question-circle"></i> Help </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="courseNav">
+            <div class="card card-body">
+              <ul class="wd-nav-navigation">
+                <li><a href="/Kanbas/Courses/Home/screen.html"> Home</a></li>
+                <li><a href="#"> Modules</a></li>
+                <li><a href="#"> Piazza</a></li>
+                <li><a href="#"> Zoom Meetings</a></li>
+                <li>
+                  <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+                </li>
+                <li><a href="#"> Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+                <li><a href="#"> People</a></li>
+                <li><a href="#"> Panopto Video</a></li>
+                <li><a href="#"> Discussions</a></li>
+                <li><a href="#"> Announcements</a></li>
+                <li><a href="#"> Pages</a></li>
+                <li><a href="#"> Files</a></li>
+                <li><a href="#"> Modules</a></li>
+                <li><a href="#"> Outcomes</a></li>
+                <li><a href="#"> Collaborations</a></li>
+                <li><a href="#"> Syllabus</a></li>
+                <li>
+                  <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">
+                    Settings
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <!-- Implement links to Kanbas and Course Navigation -->
     <div class="d-flex">
       <div class="d-none d-md-block">
         <ul class="wd-kanbas-navigation">
-          <li><a href="http://northeastern.edu"><img src="/Kanbas/Icons/Northeastern-University-logo.png" class="icon-size"></a></li>
+          <li><a href="http://northeastern.edu"><img src="\images\Northeastern-University-Logo.png" class="icon-size"></a></li>
           <li>
             <a href="/Kanbas/Account/Profile/screen.html">
                 <div class="sidebar-option">
@@ -23,7 +131,7 @@
                 </div>
             </a>
         </li>
-        <li class="wd-active">
+        <li>
             <a href="/Kanbas/Dashboard/screen.html">
                 <div class="sidebar-option">
                     <i class="fa fa-tachometer"></i>
@@ -31,7 +139,7 @@
                 </div>
             </a>
         </li>
-        <li>
+        <li class="wd-active">
             <a href="/Kanbas/Courses/Home/screen.html">
                 <div class="sidebar-option">
                       <i class="fa fa-book icon-size non-acc-color"> </i>
