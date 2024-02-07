@@ -1,0 +1,67 @@
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+
+.modules {
+  position: relative;
+}
+
+.mod-buttons {
+  position: absolute; 
+  top:0; 
+  right:0;
+}
+
+.mod-buttons .mod-button {
+  margin: 5px;
+  border-color:grey;
+  background-color: lightgray;
+}
+
+#mod-button-select{
+  width:100px;
+}
+
+#mod-button-module{
+  background-color: rgb(238, 46, 46);
+  color: white;
+}
+
+.sub-group {
+  margin-left: 25px;
+}
+
+.wd-modules .list-group-item{
+}
+
+.wd-modules .list-group{
+}

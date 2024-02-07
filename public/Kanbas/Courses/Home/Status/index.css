@@ -1,0 +1,43 @@
+.course-status .btn-group-parent {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.btn-group {
+    left: 0;
+    padding: 0px;
+}
+
+#btn-group-2 {
+    margin-bottom: 10px;
+}
+
+#btn-group-2 button {
+    margin: 0px;
+}
+
+.btn-group button {
+    color: rgb(86, 86, 86);
+    background-color: lightgray;
+    border: 1px solid gray; 
+    cursor: pointer;
+    margin-bottom: 3px;
+
+  }
+  
+  .btn-group button:not(:last-child) {
+    margin-bottom: none;
+  }
+
+  .coming-up-list {
+    list-style-type: none;
+  }
+
+  #coming-up-header-title {
+    font-size: large;
+    flex-wrap: nowrap;
+  }
+
+  .view-cal {
+    right:0
+  }
