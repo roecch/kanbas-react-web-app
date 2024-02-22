@@ -5,6 +5,7 @@ import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import Highlight from "./Highlight";
 import Add from "./Add";
+import TodoList from "./todos/TodoList";
 
 function Assignment3() {
  return (
@@ -20,6 +21,7 @@ function Assignment3() {
         vel nihil repellat nemo explicabo excepturi consectetur. Modi omnis minus sequi maiores, provident voluptates.
      </Highlight>
       <Add a={3} b={4} />
+      <TodoList/>
    </div>
  );
 }
