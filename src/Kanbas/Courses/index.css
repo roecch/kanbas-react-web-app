@@ -1,0 +1,21 @@
+.courseBar {
+    color: darkred;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.courseBar h1{
+    vertical-align: middle;
+    color: darkred;
+    font-size:large;
+}
+
+.coursebody{
+    padding-top: 20px;
+    left: 320px; 
+    top: 50px;
+}
+
+.path-course-bar{
+    display: inline-block;
+}
