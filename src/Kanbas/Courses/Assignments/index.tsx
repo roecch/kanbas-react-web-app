@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheckCircle, FaClipboard, FaEllipsisV, FaPlus, FaPlusCircle, FaStickyNote } from "react-icons/fa";
+import { FaCheckCircle, FaClipboard, FaEllipsisV, FaPlus, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
 function Assignments() {

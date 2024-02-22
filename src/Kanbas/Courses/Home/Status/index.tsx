@@ -28,15 +28,15 @@ function Status() {
                         Coming Up
                             <span id="comup">
                                 <FaCalendar/> 
-                                <a href="">
+                                <a href="/">
                                     View Calendar
                                   </a>
                             </span>
                       </div>
                     <ul className="coming-up-list">
-                        <li><FaCalendar/> <a href="">Lecture 1</a></li>
-                        <li><FaCalendar/> <a href="">Lecture 2</a></li>
-                        <li><FaCalendar/> <a href="">Lecture 3</a></li>
+                        <li><FaCalendar/> <a href="/">Lecture 1</a></li>
+                        <li><FaCalendar/> <a href="/">Lecture 2</a></li>
+                        <li><FaCalendar/> <a href="/">Lecture 3</a></li>
                     </ul>
                 </div>
             </div>
