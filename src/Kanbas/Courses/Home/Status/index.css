@@ -2,6 +2,10 @@
     padding-left: 0px;
     margin-left: 0px;
 }
+.course-status{
+  padding-left: 0px;
+  margin-left: 0px;
+}
 
 .btn-group {
     left: 0;
@@ -18,7 +22,7 @@
 
 .btn-group button {
     color: rgb(86, 86, 86);
-    background-color: lightgray;
+    background-color: rgb(236, 234, 234);
     border: 1px solid gray; 
     cursor: pointer;
     margin-bottom: 3px;
@@ -37,7 +41,3 @@
     font-size: large;
     flex-wrap: nowrap;
   }
-
-/* .course-status {
-  width: 20%;
-} */

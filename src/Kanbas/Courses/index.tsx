@@ -1,4 +1,4 @@
-import { courses } from "../../Kanbas/Database";
+import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useLocation, useParams } from "react-router-dom";
 import { HiMiniBars3, HiOutlineArrowRight } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
@@ -7,9 +7,9 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 
-function Courses() {
+function Courses({courses} : {courses : any}) {
   const {courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const course = courses.find((course: { _id: string | undefined; }) => course._id === courseId);
   const courIDstr = courseId?.toString()!
   const location = useLocation();
   const { pathname } = location;

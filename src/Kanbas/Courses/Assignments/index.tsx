@@ -1,9 +1,10 @@
 import React from "react";
 import { FaCheckCircle, FaClipboard, FaEllipsisV, FaPlus, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
+import db from "../../Database";
 function Assignments() {
   const { courseId } = useParams();
+  let assignments = db.assignments
   const assignmentList = assignments.filter(
     (assignment) => assignment.course === courseId);
     console.log(assignments)
@@ -31,6 +32,7 @@ function Assignments() {
                     </select>
                     </span>
 
+      <br/>
 
       <ul className="list-group wd-modules">
         <li className="list-group-item">

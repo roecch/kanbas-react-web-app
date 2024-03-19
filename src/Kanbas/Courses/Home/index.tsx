@@ -9,7 +9,7 @@ function Home() {
         <h2>Home</h2>
         <ModuleList />
       </div>
-      <div className="status-container">
+      <div className="status-container ">
         <Status />
       </div>
     </div>

@@ -56,8 +56,22 @@
   margin-left: 25px;
 }
 
-.wd-modules .list-group-item{
+
+.newdescription {
+  width: 100%;
+  height: 100%;
 }
 
-.wd-modules .list-group{
+.newname {
+  width: 100%;
+  height: 100%;
+}
+
+.list-group button {
+  color: whitesmoke;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
