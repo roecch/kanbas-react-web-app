@@ -1,4 +1,3 @@
-import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useLocation, useParams } from "react-router-dom";
 import { HiMiniBars3, HiOutlineArrowRight } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
