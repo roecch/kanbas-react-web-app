@@ -5,16 +5,47 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./reducer";
 import { KanbasState } from "../../store";
+import * as client from "./client";
 import "./index.css"
+import { useEffect } from "react";
+
+
 function ModuleList() {
   const { courseId } = useParams();
+
   const moduleList = useSelector((state: KanbasState) => 
     state.modulesReducer.modules);
   const module = useSelector((state: KanbasState) => 
     state.modulesReducer.module);
   const dispatch = useDispatch();
+
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+  const handleDeleteModule = (moduleId: string) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
+  
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules: any) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId, dispatch]); ////////////////
   return (
     <ul className="list-group">
       <li className="list-group-item">
@@ -30,11 +61,11 @@ function ModuleList() {
             dispatch(setModule({ ...module, description: e.target.value }))
           }/>
           <button className="addBtn"
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+          onClick={() => handleAddModule}>
           Add
         </button>
         <button className="upBtn"
-          onClick={() => dispatch(updateModule(module))}>
+          onClick={() => handleUpdateModule}>
           Update
         </button>
       </li>
@@ -49,7 +80,7 @@ function ModuleList() {
                   Edit
                 </button>
                 <button className="delBtn"
-                  onClick={() => dispatch(deleteModule(module._id))}>
+                  onClick={() => handleDeleteModule(module._id)}>
                   Delete
                 </button>
               </div>
