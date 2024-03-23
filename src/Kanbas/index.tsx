@@ -13,7 +13,7 @@ const API_BASE = process.env.REACT_APP_API_BASE;
 
 function Kanbas() {
   const [courses, setCourses] = useState<any[]>([]);
-  const COURSES_API = `${API_BASE}api/courses`;
+  const COURSES_API = `${API_BASE}/api/courses`;
   const [course, setCourse] = useState({
     _id: "1234", name: "New Course", number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15", image: "blank.png"
