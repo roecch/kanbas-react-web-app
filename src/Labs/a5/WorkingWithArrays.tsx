@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -28,12 +29,6 @@ function WorkingWithArrays() {
   const fetchTodoById = async (id: any) => {
     const response = await axios.get(`${API}/${id}`);
     setTodo(response.data);
-  };
-
-  const removeTodo = async (todo : any) => {
-    const response = await axios
-      .get(`${API}/${todo.id}/delete`);
-    setTodos(response.data);
   };
   
   const deleteTodo = async (todo : any) => {
