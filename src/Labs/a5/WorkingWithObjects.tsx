@@ -7,12 +7,6 @@ function WorkingWithObjects() {
     due: "2021-10-10", completed: false, score: 0,
   });
 
-  const [module, setModule] = useState({
-    "id": "L812",
-    "name": "Quantum Optics",
-    "description": "Exploring applications of quantum mechanics in optics and photonics.",
-    "module": "M804"
-  });
 
   const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment";
   const fetchAssignment = async () => {
